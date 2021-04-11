@@ -1,0 +1,88 @@
+<div class="row">
+
+  <div class="containere checkout mt-3 col-6 ">
+    <h1>Checkout</h1>
+  
+    {{ cart }}
+  
+    <div *ngIf="buyChekOut[0].length == 0">
+      <p > Aun no tienes productos acá!</p>
+    </div>
+  
+    <div *ngFor="let item of buyFiltered;" class="">
+      
+  
+        <div class="">
+  
+          {{ item.name }}
+          {{ item.price }} 
+    
+          <i class="far fa-trash-alt ml-3" (click)="delete(i)" (click)="calculateTotal()"></i>
+    
+  
+        </div>
+  
+    </div>
+  
+  
+  <h3 class="mt-3" > Total  {{ totalSum }}  </h3>  
+  
+  </div>
+  
+  <div class="ml-5 text-center">
+  
+  <img src="../../assets/dell-off.jpg" alt="" class="dellImg mt-5">
+  
+  </div>
+
+</div>
+
+
+<br><br><br>
+
+
+<div class="row ">
+
+  <div class="  ml-5 checkoutBox">
+      <div class="containerPay">
+        <form action="/action_page.php">
+
+          <div class="row">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname"> Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+              <label for="email"> Email</label>
+              <input type="text" id="email" name="email" placeholder="john@example.com">
+
+          </div>
+
+            <div class="col-50">
+              <h3>Payment</h3>
+
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+
+
+          
+            </div>
+          </div>
+
+          <input type="submit" value="Pagar" class="btn">
+        </form>
+      </div>
+  </div>
+
+  <div class="col-6 text-center">
+
+  <img src="../../assets/cyber-monday.jpg" alt="" class="cybermondayImg">
+
+
+  </div>
+
+</div>
+
+
+<br><br><br>
