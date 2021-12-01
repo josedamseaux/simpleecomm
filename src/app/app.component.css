@@ -1,3 +1,44 @@
 body {
-    background: rgb(209, 245, 7);
+  background-color: rgb(255, 126, 5) !important;
 }
+
+.navbar{
+  height: 40px;
+}
+.navbar-brand{
+  margin-bottom:5px;
+}
+
+.cardSHop,
+.cartNumber {
+  font-size: 20px;
+  position: relative;
+  display: flex;
+  bottom: -50%;
+
+}
+.fa-shopping-cart,
+.fa-user,
+.cartNumber {
+  color: rgb(247, 247, 247);
+}
+
+.cartNumber {
+  top: 1px;
+  right: 4px;
+}
+
+#navbarDropdown.nav-link.dropdown-toggle::after {
+  visibility: hidden;
+  padding: 0;
+}
+
+#navbarDropdown.nav-link.dropdown-toggle {
+  padding: 0;
+  top:10px;
+}
+
+.nav-item.dropdown::marker {
+  color: #343a40;
+}
+

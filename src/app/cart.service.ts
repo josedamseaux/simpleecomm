@@ -15,7 +15,13 @@ export class CartService implements OnInit {
    buyCheck:any[]=[];
 
    products;
-
+   
+   
+    ngOnInit(){
+ 
+     this.setBuy(this.buyCheck)
+ 
+   }
 
   public setBuy(buy){
 
@@ -25,12 +31,6 @@ export class CartService implements OnInit {
     }
 
 
-  
-   ngOnInit(){
-
-    this.setBuy(this.buyCheck)
-
-  }
 
 
 }

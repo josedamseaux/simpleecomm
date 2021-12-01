@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
-import { CartService } from './cart.service';
+import { CartService } from '../cart.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.css']
 })
-export class AppComponent  {
-
-  title = 'angularecommerce';
+export class NavbarComponent implements OnInit {
 
   productsLength;
   products;
@@ -30,6 +27,5 @@ export class AppComponent  {
     console.log(this.cart2)
   }
 
-
-
+ 
 }

@@ -1,44 +1,30 @@
-
-/* Carrito */
-.cardSHop{
-    font-size: 30px;
-    left:0;
-    position: relative;
-    display: flex;
-}
-
-#cartNumber{
-  font-size: 30px;
-  /* margin-top: 1px; */
-
-}
-
 p.bounce-in-right{
   padding-top: 5px ;
   margin-left: 5px;
 }
 
-.fa-shopping-cart{
-  color: #111;
-}
 
 /* Cards */
 .card-img-top{
-  /* width: 100%;
-  height: 190px;
-  /* padding-left: 45px; */
   image-rendering: optimizeQuality;
 }
 
 .card{
   padding: 15px;
   margin: 10px;
+  background-color: #d1fad1;
 }
 
+.card-body{
+  color: rgb(0, 0, 0);
 
-p {
-    color: rgb(0, 0, 0);
 }
+
+.card-body, a:link{
+  text-decoration: none;
+
+}
+
 
 
 body {
@@ -52,17 +38,16 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #ffffff;
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
   }
   
   .sidebar a {
-    padding: 8px 8px 8px 8px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #000000;
     display: block;
     transition: 0.1s;
   }
@@ -70,7 +55,7 @@ body {
   .sidebar a:hover {
     color: #f1f1f1;
   }
-  
+
   .sidebar .closebtn {
     position: absolute;
     top: 0;
@@ -83,13 +68,9 @@ body {
     font-size: 20px;
     cursor: pointer;
     background-color: #111;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px 15px;
     border: none;
-  }
-  
-  .openbtn:hover {
-    background-color: #444;
   }
   
   #main {
@@ -97,9 +78,28 @@ body {
     padding: 16px;
   }
 
+
+
   .numberCart{
-    color: #f1f1f1;
+    color: #000000;
   }
+
+  .btnLess, .btnMore{
+    height: 5%;
+    width: 15%;
+    padding: 0;
+  }
+
+
+ 
+
+  @media screen and (min-width: 575px) {
+    .card-title{
+      font-size: 12px;
+    }
+
+  }
+
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
@@ -121,6 +121,7 @@ body {
       display: flex;
   }
 
+
   }
 
   @media screen and (max-width: 300px) {
@@ -137,11 +138,6 @@ body {
 
   }
 
-
-  .card-group{
-    /* margin: auto; */
-    /* padding-left: 30px; */
-     }
 
 
   .bounce-in-right {

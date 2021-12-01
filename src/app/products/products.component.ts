@@ -17,7 +17,6 @@ export class ProductsComponent implements OnInit {
   
   showFiller = false;
 
-  cart2:any[] = [];
 
   name;
 
@@ -34,18 +33,16 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit() {
 
-    this.cart2 = this.service.buyCheck
-    console.log(this.cart2)
+    // this.cart2 = this.service.buyCheck
+    // console.log(this.cart2)
   }
 
 
 
   buyNow(notebookName, refPrice){
 
-
       let count;
       count = this.number;
-
 
       this.buy = {
         name: notebookName.innerHTML,
@@ -53,16 +50,12 @@ export class ProductsComponent implements OnInit {
       }
 
 
-    
-    for(let i=0;i<count;i++){
+        for(let i=0;i<count;i++){
 
       this.service.setBuy(this.buy)
-
     }
 
-
-
-    setTimeout(this.closeNav, 3000)
+    
     this.number = 1;
 
 
@@ -83,18 +76,14 @@ export class ProductsComponent implements OnInit {
 
 
     document.getElementById("mainContainer").style.opacity = "0.5";
-
     document.getElementById("mainContainer").style.backgroundColor = "#0000";
 
   }
 
   closeNav() {
     document.getElementById("mySidebar").style.width = "0";
-
     document.getElementById("mainContainer").style.opacity = "1";
-      
    };
-
 
 
   number = 1;
@@ -109,11 +98,7 @@ export class ProductsComponent implements OnInit {
   }
 
 
-  closeModal(){
-
-
-
-  }
+ 
 
 
 }
